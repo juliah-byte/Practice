@@ -17,9 +17,13 @@ public class PracticeOne {
 			if(isVowel(letter)) {
 				count++;
 			}
+			
+			
 		}
 		
 		System.out.println("The number of vowels: " + count);
+		
+		reverse("Brass");
 		
 		scanner.close();
 		
@@ -34,6 +38,21 @@ public class PracticeOne {
 		}
 		
 		return false;
+	}
+	
+	
+	public static void reverse(String S) {
+		
+		String myString = " ";
+		
+		for(int i = 0; i > S.length(); i++) {
+			
+			myString += S.charAt(S.length() - i - 1);
+			
+		}
+		
+		System.out.println(myString);
+		System.out.println("Test this again");
 	}
 }
 		
