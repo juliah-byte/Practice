@@ -45,7 +45,7 @@ public class PracticeOne {
 		
 		String myString = " ";
 		
-		for(int i = 0; i > S.length(); i++) {
+		for(int i = 0; i < S.length(); i++) {
 			
 			myString += S.charAt(S.length() - i - 1);
 			
