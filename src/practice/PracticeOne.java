@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class PracticeOne {
 	
 	public static void  main(String[] args) {
+		
+		
+		Integer [] myList = new Integer[] {1,2,25,3,4,11};
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Please enter a line and hit enter.");
@@ -24,6 +27,8 @@ public class PracticeOne {
 		System.out.println("The number of vowels: " + count);
 		
 		reverse("Brass");
+		
+		maximum(myList);
 		
 		scanner.close();
 		
@@ -53,6 +58,23 @@ public class PracticeOne {
 		
 		System.out.println(myString);
 		System.out.println("Test this again");
+	}
+	
+	
+	public static Integer maximum(Integer[] list) {
+		
+		Integer max = 0;
+		
+		for(int i = 0; i < list.length; i++) {
+			
+			if(list[i] > max) {
+				max = list[i];
+			}
+		}
+		
+		System.out.println(max);
+		return max;
+		
 	}
 }
 		
