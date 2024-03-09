@@ -76,6 +76,13 @@ public class PracticeOne {
 		return max;
 		
 	}
+	
+	
+	public static String convertToUppercase(String thing) {
+		
+		return thing.toUpperCase();
+		
+	}
 }
 		
 		
